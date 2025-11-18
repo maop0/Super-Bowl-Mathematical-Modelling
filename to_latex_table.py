@@ -1,6 +1,6 @@
 import numpy as np
-
 import pandas as pd
+
 def array_latex_table(mat):
     """
     input: np.array
@@ -14,6 +14,7 @@ def array_latex_table(mat):
         row_str = " & ".join([str(mat[i, j]) for j in range(cols)])
         latex_str += row_str + " \\\\\n"
     return latex_str
+
 def csv_latex_table(file_path):
     """
     input: csv file path
