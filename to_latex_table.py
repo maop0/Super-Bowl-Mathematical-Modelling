@@ -23,3 +23,8 @@ def csv_latex_table(file_path):
     df = pd.read_csv(file_path)
     latex_str = df.to_latex(index=False, header=True)
     return latex_str
+
+array_latex_table(np.array(
+[[0.65217391, 0.66666667, 0.625     ],
+ [0.2173913 , 0.22222222 ,0.25      ],
+ [0.13043478 ,0.11111111, 0.125     ]]))
